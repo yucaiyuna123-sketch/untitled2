@@ -6,7 +6,7 @@ public class NovelGame extends JFrame {
     private JButton nextButton;
 
     public NovelGame() {
-        setTitle("ノベルゲーム");
+        setTitle("ひなののイチャイチャ部屋");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
