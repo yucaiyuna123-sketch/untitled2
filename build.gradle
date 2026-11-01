@@ -1,0 +1,54 @@
+plugins {
+    id("java")
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'org.beryx.jlink' version '4.1.0'
+}
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform("org.junit:junit-bom:6.0.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+    // SLF4J を使う
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    // Logback を使う
+    implementation 'ch.qos.logback:logback-core:1.2.3'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+
+    implementation 'com.google.code.gson:gson:2.14.0'
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+}
+
+
+tasks.test {
+    useJUnitPlatform()
+}
+javafx {
+    version = "26.0.2"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+jlink {
+    launcher {
+        name = 'hellofx'
+    }
+    mergedModule {
+        uses 'ch.qos.logback.classic.spi.Configurator'
+    }
+
+}
+application {
+    mainModule = 'org.example.untitled2'
+    mainClass = 'org.example.untitled2.Main'
+}
