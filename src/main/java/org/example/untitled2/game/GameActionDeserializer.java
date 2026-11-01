@@ -29,8 +29,8 @@ public class GameActionDeserializer implements JsonDeserializer<GameAction> {
 
                 // 2. JSON内のパス（String）から Image オブジェクトをその場で生成
                 Image image = null;
-                if (jsonObject.has("imagePath")) {
-                    String imagePath = jsonObject.get("imagePath").getAsString();
+                if (jsonObject.has("scene")) {
+                    String imagePath = jsonObject.get("scene").getAsString();
                     if (!imagePath.isEmpty()) {
                         image = new Image();
                     }
@@ -38,8 +38,8 @@ public class GameActionDeserializer implements JsonDeserializer<GameAction> {
 
                 // 3. JSON内のパス（String）から Media オブジェクトをその場で生成
                 Media media = null;
-                if (jsonObject.has("audioPath")) {
-                    String audioPath = jsonObject.get("audioPath").getAsString();
+                if (jsonObject.has("bgm")) {
+                    String audioPath = jsonObject.get("bgm").getAsString();
                     if (!audioPath.isEmpty()) {
                         media = new Media();
                     }

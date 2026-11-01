@@ -7,6 +7,7 @@
   ],
 
   "prologue":[
+    {"action": "scene", "scene":  "scene1"},
     {"action": "text", "text":  "文化祭まで、あと一週間。", "human": "boy"},
     {"action": "text", "text":  "高校二年の俺にとっては、今年で二回目の文化祭だ。", "human": "boy"},
     {"action": "text", "text":  "去年は友達と適当に出店を回って、それで終わった。", "human": "boy"},
@@ -86,6 +87,7 @@
 
   ],
   "Chapter2": [
+    {"action": "scene", "scene":  "scene2"},
     {"action": "text", "text":  "「ここでやるの？」", "human": "boy"},
     {"action": "text", "text":  "「うん。誰もいないし」", "human": "girl"},
     {"action": "text", "text":  "「本番はここより人いるぞ」", "human": "boy"},
@@ -139,6 +141,7 @@
     {"action": "text", "text":  "「……それ、いいかも」", "human": "girl"}
   ],
   "Chapter3": [
+    {"action": "scene", "scene":  "scene1"},
     {"action": "text", "text":  "文化祭前日。", "human": "narrator"},
     {"action": "text", "text":  "教室には、ほとんど人がいない。", "human": "narrator"},
     {"action": "text", "text":  "ひなのが机の上に置かれた衣装を見る。", "human": "narrator"},
@@ -171,6 +174,7 @@
 
   ],
   "Chapter4": [
+      {"action": "scene", "scene":  "scene3"},
       {"action": "text", "text": "文化祭当日。", "human": "narrator"},
       {"action": "text", "text": "俺は客席の前の方に座り、ステージを見つめていた。", "human": "narrator"},
       {"action": "text", "text": "もうすぐ、ひなのの出番だ。", "human": "narrator"},
@@ -223,6 +227,7 @@
     {"action": "text", "text": "ちゃんと、輝いていた。", "human": "narrator"}
     ],
   "Epilogue": [
+    {"action": "scene", "scene":  "scene1"},
     {"action": "text", "text": "文化祭が終わった。", "human": "narrator"},
     {"action": "text", "text": "俺は校舎の裏で一人、空を見ていた。", "human": "narrator"},
     {"action": "text", "text": "……いた！", "human": "girl"},
