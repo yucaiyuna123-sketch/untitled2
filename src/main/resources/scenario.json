@@ -54,10 +54,10 @@
    {"action": "text", "text":  "「ずっと、人前に出るの苦手って言って逃げてきたから」", "human": "girl"},
    {"action": "text", "text":  "「だから、一回くらい」", "human": "girl"},
    {"action": "text", "text":  "「逃げないでやってみたい」", "human": "girl"},
-   {"action": "choose", "text": "text", "first": {"text": "「いいじゃん。やってみれば？」", "case": "case1"}, "second": {"text": "「そんなに無理しなくてもいいんじゃない？」", "case": "case2"},"third": {"text": "「俺でよければ練習付き合うよ」", "case": "case3"}}
+   {"action": "choose", "text": "text", "first": {"text": "「いいじゃん。やってみれば？」", "case": "case1-1"}, "second": {"text": "「そんなに無理しなくてもいいんじゃない？」", "case": "case1-2"},"third": {"text": "「俺でよければ練習付き合うよ」", "case": "case1-3"}}
 
  ],
-  "case1":[
+  "case1-1":[
     {"action": "text", "text":  "「いいじゃん。やってみれば？」", "human": "boy"},
     {"action": "text", "text":  "「……ほんと？」", "human": "girl"},
     {"action": "text", "text":  "「うん。せっかく自分からやりたいって思ったんだろ？」", "human": "boy"},
@@ -65,7 +65,7 @@
     {"action": "text", "text":  "ひなのが少し笑う。", "human": "narrator"},
     {"action": "text", "text":  "「じゃあ、絶対成功させる」", "human": "girl"}
   ],
-  "case2":[
+  "case1-2":[
     {"action": "text", "text":  "「そんなに無理しなくてもいいんじゃない？」", "human": "boy"},
     {"action": "text", "text":  "「……うん。そうかも」", "human": "girl"},
     {"action": "text", "text":  "一瞬、ひなのの表情が曇る。", "human": "narrator"},
@@ -74,14 +74,14 @@
     {"action": "text", "text":  "「……そっか」", "human": "boy"},
     {"action": "text", "text":  "「ありがと。心配してくれて」", "human": "girl"}
   ],
-  "case3":[
+  "case1-3":[
     {"action": "text", "text":  "「俺でよければ練習付き合うよ」", "human": "boy"},
     {"action": "text", "text":  "「え？」", "human": "girl"},
     {"action": "text", "text":  "「一人で練習するよりいいだろ」", "human": "boy"},
     {"action": "text", "text":  "「……じゃあ、お願いしようかな」", "human": "girl"},
     {"action": "text", "text":  "「おう」", "human": "boy"},
     {"action": "text", "text":  "「絶対途中で笑わないでよ？」", "human": "girl"},
-    {"action": "text", "text":  "「善処する」」", "human": "boy"},
+    {"action": "text", "text":  "「善処する」", "human": "boy"},
     {"action": "text", "text":  "「そこは約束しろ！」", "human": "girl"}
 
   ],
@@ -113,7 +113,7 @@
     {"action": "text", "text":  "「練習なら、失敗してもいい」", "human": "girl"},
     {"action": "text", "text":  "「でも本番は、みんなが見てる」", "human": "girl"},
     {"action": "text", "text":  "「もし途中で止まったら」", "human": "girl"},
-    {"action": "choose", "text": "text", "first": {"text": "「失敗しても誰も気にしないよ」", "case": "case2-1"}, "second": {"text": "「じゃあ、本番と同じように練習しよう」", "case": "case2-1"},"third": {"text": "「怖いなら、怖いままでいいんじゃない？」"},"case": "case2-3"}
+    {"action": "choose", "text": "text", "first": {"text": "「失敗しても誰も気にしないよ」", "case": "case2-1"}, "second": {"text": "「じゃあ、本番と同じように練習しよう」", "case": "case2-1"},"third": {"text": "「怖いなら、怖いままでいいんじゃない？」","case": "case2-3"}}
   ],
   "case2-1":[
   {"action": "text", "text":  "「失敗しても、誰もそんなに気にしないよ」", "human": "boy"},
@@ -220,7 +220,7 @@
     {"action": "text", "text": "でも、きっと変わったわけじゃない。", "human": "narrator"},
     {"action": "text", "text": "怖い気持ちを抱えたまま、それでも一歩踏み出しただけだ。", "human": "narrator"},
     {"action": "text", "text": "その姿は――", "human": "narrator"},
-    {"action": "text", "text": "ちゃんと、輝いていた。", "human": "narrator"},
+    {"action": "text", "text": "ちゃんと、輝いていた。", "human": "narrator"}
     ],
   "Epilogue": [
     {"action": "text", "text": "文化祭が終わった。", "human": "narrator"},
@@ -264,6 +264,7 @@
     {"action": "text", "text": "あの日、ステージに立つことを選んだ彼女は、もう昨日までの彼女ではなかった。", "human": "narrator"},
     {"action": "text", "text": "ほんの少しだけ、前へ進んでいた。", "human": "narrator"},
     {"action": "text", "text": "『放課後、ステージの向こう側』", "human": "narrator"},
-    {"action": "text", "text": "――END――", "human": "narrator"}
+    {"action": "text", "text": "――END――", "human": "narrator"},
+    {"action": "end"}
   ]
 }
